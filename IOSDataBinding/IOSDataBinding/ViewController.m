@@ -7,18 +7,35 @@
 //
 
 #import "ViewController.h"
+#import "RegistrationDto.h"
+#import "UITextField+Binding.h"
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *firstName;
+@property (weak, nonatomic) IBOutlet UITextField *lastName;
+@property (weak, nonatomic) IBOutlet UITextField *emailField;
+@property (weak, nonatomic) IBOutlet UITextField *mobileField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
+@property (nonatomic) RegistrationDto *registrationDto;
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)loginButtonAction:(id)sender {
+
+    
 }
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    self.registrationDto = [RegistrationDto new];
+    
+    [self.firstName bind:self.registrationDto];
+      
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
