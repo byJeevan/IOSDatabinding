@@ -207,6 +207,7 @@
 				TargetAttributes = {
 					3CCA990B1E448D8800A9BF91 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 77Z62D8Y73;
 						ProvisioningStyle = Automatic;
 					};
 					3CCA99241E448D8900A9BF91 = {
@@ -424,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSDataBinding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSDataBinding;
@@ -435,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 77Z62D8Y73;
 				INFOPLIST_FILE = IOSDataBinding/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.IOSDataBinding;
@@ -507,6 +510,7 @@
 				3CCA993B1E448D8900A9BF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CCA993C1E448D8900A9BF91 /* Build configuration list for PBXNativeTarget "IOSDataBindingTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +519,7 @@
 				3CCA993E1E448D8900A9BF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3CCA993F1E448D8900A9BF91 /* Build configuration list for PBXNativeTarget "IOSDataBindingUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +528,7 @@
 				3CCA99411E448D8900A9BF91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
