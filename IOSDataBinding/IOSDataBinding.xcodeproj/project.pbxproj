@@ -17,7 +17,6 @@
 		3CCA99171E448D8800A9BF91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99161E448D8800A9BF91 /* ViewController.m */; };
 		3CCA991A1E448D8800A9BF91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA99181E448D8800A9BF91 /* Main.storyboard */; };
 		3CCA991C1E448D8900A9BF91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA991B1E448D8900A9BF91 /* Assets.xcassets */; };
-		3CCA991F1E448D8900A9BF91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA991D1E448D8900A9BF91 /* LaunchScreen.storyboard */; };
 		3CCA992A1E448D8900A9BF91 /* IOSDataBindingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99291E448D8900A9BF91 /* IOSDataBindingTests.m */; };
 		3CCA99351E448D8900A9BF91 /* IOSDataBindingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99341E448D8900A9BF91 /* IOSDataBindingUITests.m */; };
 		3CCA99451E4493DF00A9BF91 /* background_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA99441E4493DF00A9BF91 /* background_color.jpg */; };
@@ -62,7 +61,6 @@
 		3CCA99161E448D8800A9BF91 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3CCA99191E448D8800A9BF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3CCA991B1E448D8900A9BF91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3CCA991E1E448D8900A9BF91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3CCA99201E448D8900A9BF91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3CCA99251E448D8900A9BF91 /* IOSDataBindingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSDataBindingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCA99291E448D8900A9BF91 /* IOSDataBindingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOSDataBindingTests.m; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				3CCA99181E448D8800A9BF91 /* Main.storyboard */,
 				3CCA99441E4493DF00A9BF91 /* background_color.jpg */,
 				3CCA991B1E448D8900A9BF91 /* Assets.xcassets */,
-				3CCA991D1E448D8900A9BF91 /* LaunchScreen.storyboard */,
 				3CCA99201E448D8900A9BF91 /* Info.plist */,
 				3CCA99101E448D8800A9BF91 /* main.m */,
 			);
@@ -312,7 +309,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CCA991F1E448D8900A9BF91 /* LaunchScreen.storyboard in Resources */,
 				3CBA261B1E49A52800482509 /* Fruits.plist in Resources */,
 				3CCA99451E4493DF00A9BF91 /* background_color.jpg in Resources */,
 				3CCA991C1E448D8900A9BF91 /* Assets.xcassets in Resources */,
@@ -392,14 +388,6 @@
 				3CCA99431E4492EB00A9BF91 /* en */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3CCA991D1E448D8900A9BF91 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3CCA991E1E448D8900A9BF91 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (nonatomic, strong) RegistrationDto *registrationDto;
 @property (strong) NSArray * data;
+@property (weak, nonatomic) IBOutlet UILabel *dtoDataLabel;
 
 @end
 
@@ -22,13 +23,9 @@
 
 - (IBAction)loginButtonAction:(id)sender {
     
-    
     /**********************
      * View --- to ---> DTO
      **********************/
-    
-    // self.registrationDto =  self.view.dataObject;
-    //updateViewForBindingEntry
     
     [self.view updateDataObjectFromView];
     
@@ -37,8 +34,9 @@
     NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
     
     NSLog(@">> DTO lastName: %@", self.registrationDto.lastName);
-
     
+    self.dtoDataLabel.text = [[NSString alloc] initWithFormat:@" Updated DTO ---> Fname : %@ \n, LName: %@ \n, Email: %@ \n", self.registrationDto.firstName, self.registrationDto.lastName, self.registrationDto.email];
+
 }
 
 - (void)viewDidLoad {
@@ -50,15 +48,15 @@
     
     self.registrationDto = [RegistrationDto new];
     
-    self.registrationDto.firstName = @"jeevan";
-    self.registrationDto.lastName = @"rao";
-    self.registrationDto.email  = @"jeevan.rao@bemore.ch";
+    self.registrationDto.firstName = @"Elon";
+    self.registrationDto.lastName = @"Musk";
+    self.registrationDto.email  = @"elon.musk@tesla.com";
     
     self.view.dataObject  = self.registrationDto;
     
-//    NSLog(@"Data object first name: %@", [self.view.dataObject valueForKey:@"firstName"]);
-//    NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
-//    NSLog(@"Data object email name: %@", [self.view.dataObject valueForKey:@"email"]);
+    NSLog(@"Data object first name: %@", [self.view.dataObject valueForKey:@"firstName"]);
+    NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
+    NSLog(@"Data object email name: %@", [self.view.dataObject valueForKey:@"email"]);
 }
 
 - (void)didReceiveMemoryWarning {
