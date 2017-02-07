@@ -28,11 +28,11 @@
      **********************/
     
     // self.registrationDto =  self.view.dataObject;
+    //updateViewForBindingEntry
     
-    
+    [self.view updateDataObjectFromView];
     
     NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"firstName"]);
-    
     
     NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
     

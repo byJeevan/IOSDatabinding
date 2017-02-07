@@ -20,4 +20,6 @@
 
 -(void)updateView;
 
+-(void)updateModel;
+
 @end

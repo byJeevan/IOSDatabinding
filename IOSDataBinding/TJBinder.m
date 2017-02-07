@@ -84,6 +84,14 @@
     }
 }
 
+-(void)updateModel{
+    
+    for (TJBindEntry* entry in self.bindings)
+    {
+        [self updateBindingEntryForView:entry];
+    }
+}
+
 -(void)setDataObject:(id)dataObject
 {
     _dataObject = dataObject;
@@ -252,8 +260,22 @@
 -(void)updateViewForBindingEntry:(TJBindEntry*)entry
 {
     id extractedValue = [self.dataObject valueForKeyPath:entry.dataObjectKeyPath];
+    
     [entry.view setValue:extractedValue forKey:entry.viewKey];
 }
+
+
+-(void) updateBindingEntryForView:(TJBindEntry*)entry
+{
+   // id extractedValue = [self.dataObject valueForKeyPath:entry.dataObjectKeyPath];
+    
+   // [entry.view setValue:extractedValue forKey:entry.viewKey];
+    id extractedValue = [entry.view valueForKey:entry.viewKey];
+    
+    [self.dataObject setValue:extractedValue forKey:entry.dataObjectKeyPath];
+}
+
+
 
 #pragma mark NSObject overrides
 

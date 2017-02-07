@@ -53,4 +53,9 @@
     [self.bindTo updateView];
 }
 
+-(void) updateDataObjectFromView
+{
+     [self.bindTo updateModel];
+}
+
 @end
