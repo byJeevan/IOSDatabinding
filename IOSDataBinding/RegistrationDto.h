@@ -11,4 +11,8 @@
 
 @interface RegistrationDto : BaseDto
 
+@property (nonatomic,strong) NSString * firstName;
+@property (nonatomic,strong) NSString * lastName;
+@property (nonatomic,strong) NSString * email;
+@property (strong) NSString* name;
 @end

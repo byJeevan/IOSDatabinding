@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 typedef UIView* (^TJBinderKeyPathNoArgumentTransformerBlock)(UIView* view, NSString* originalKeyPathComponent);
 typedef UIView* (^TJBinderKeyPathIntegerArgumentTransformerBlock)(UIView* view, NSInteger argument);

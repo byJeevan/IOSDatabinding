@@ -46,6 +46,8 @@
     return objc_getAssociatedObject(self, @selector(dataObject));
 }
 
+
+
 -(void)updateFromDataObject
 {
     [self.bindTo updateView];

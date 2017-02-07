@@ -7,39 +7,15 @@
 //
 
 #import "RegistrationDto.h"
-#import "DataBinding.h"
 
 @interface RegistrationDto ()
 
-@property (nonatomic,strong) NSString * name;
-@property (nonatomic, strong) DataBinding * textFieldCallback;
 
 @end
 
 @implementation RegistrationDto
 
 
-
-
-
 @end
 
-
-@interface TextFieldCallback()  <TextFieldDataBindingProtocol>
-
-@end
-
-@implementation TextFieldCallback
-
--(NSString *) getText {
-
-
-}
-
--(void) setText:(NSString *) text{
-
- 
-}
-
-@end
 

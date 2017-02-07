@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3CBA260F1E499D5400482509 /* TJBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA26081E499D5400482509 /* TJBinder.m */; };
+		3CBA26101E499D5400482509 /* TJBinderKeyPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA260A1E499D5400482509 /* TJBinderKeyPathParser.m */; };
+		3CBA26111E499D5400482509 /* UIView+TJBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA260E1E499D5400482509 /* UIView+TJBinder.m */; };
+		3CBA261A1E49A52800482509 /* Fruit.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CBA26181E49A52800482509 /* Fruit.m */; };
+		3CBA261B1E49A52800482509 /* Fruits.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3CBA26191E49A52800482509 /* Fruits.plist */; };
 		3CCA99111E448D8800A9BF91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99101E448D8800A9BF91 /* main.m */; };
 		3CCA99141E448D8800A9BF91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99131E448D8800A9BF91 /* AppDelegate.m */; };
 		3CCA99171E448D8800A9BF91 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99161E448D8800A9BF91 /* ViewController.m */; };
@@ -17,9 +22,7 @@
 		3CCA99351E448D8900A9BF91 /* IOSDataBindingUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99341E448D8900A9BF91 /* IOSDataBindingUITests.m */; };
 		3CCA99451E4493DF00A9BF91 /* background_color.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3CCA99441E4493DF00A9BF91 /* background_color.jpg */; };
 		3CCA994D1E44983100A9BF91 /* RegistrationDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA994C1E44983100A9BF91 /* RegistrationDto.m */; };
-		3CCA99511E4498F800A9BF91 /* UITextField+Binding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99501E4498F800A9BF91 /* UITextField+Binding.m */; };
 		3CCA99541E44994200A9BF91 /* BaseDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99531E44994200A9BF91 /* BaseDto.m */; };
-		3CCA99571E44A95400A9BF91 /* DataBinding.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CCA99561E44A95400A9BF91 /* DataBinding.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3CBA26071E499D5400482509 /* TJBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinder.h; sourceTree = "<group>"; };
+		3CBA26081E499D5400482509 /* TJBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBinder.m; sourceTree = "<group>"; };
+		3CBA26091E499D5400482509 /* TJBinderKeyPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinderKeyPathParser.h; sourceTree = "<group>"; };
+		3CBA260A1E499D5400482509 /* TJBinderKeyPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBinderKeyPathParser.m; sourceTree = "<group>"; };
+		3CBA260B1E499D5400482509 /* TJBinderLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinderLogger.h; sourceTree = "<group>"; };
+		3CBA260C1E499D5400482509 /* TJDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJDataObject.h; sourceTree = "<group>"; };
+		3CBA260D1E499D5400482509 /* UIView+TJBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJBinder.h"; sourceTree = "<group>"; };
+		3CBA260E1E499D5400482509 /* UIView+TJBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJBinder.m"; sourceTree = "<group>"; };
+		3CBA26171E49A52800482509 /* Fruit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fruit.h; sourceTree = "<group>"; };
+		3CBA26181E49A52800482509 /* Fruit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Fruit.m; sourceTree = "<group>"; };
+		3CBA26191E49A52800482509 /* Fruits.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Fruits.plist; sourceTree = "<group>"; };
 		3CCA990C1E448D8800A9BF91 /* IOSDataBinding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSDataBinding.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CCA99101E448D8800A9BF91 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3CCA99121E448D8800A9BF91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,12 +74,8 @@
 		3CCA99441E4493DF00A9BF91 /* background_color.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background_color.jpg; sourceTree = "<group>"; };
 		3CCA994B1E44983100A9BF91 /* RegistrationDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistrationDto.h; sourceTree = "<group>"; };
 		3CCA994C1E44983100A9BF91 /* RegistrationDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistrationDto.m; sourceTree = "<group>"; };
-		3CCA994F1E4498F800A9BF91 /* UITextField+Binding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Binding.h"; sourceTree = "<group>"; };
-		3CCA99501E4498F800A9BF91 /* UITextField+Binding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Binding.m"; sourceTree = "<group>"; };
 		3CCA99521E44994200A9BF91 /* BaseDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDto.h; sourceTree = "<group>"; };
 		3CCA99531E44994200A9BF91 /* BaseDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDto.m; sourceTree = "<group>"; };
-		3CCA99551E44A95400A9BF91 /* DataBinding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBinding.h; sourceTree = "<group>"; };
-		3CCA99561E44A95400A9BF91 /* DataBinding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBinding.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +103,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3CBA26061E499D4700482509 /* TJBinder */ = {
+			isa = PBXGroup;
+			children = (
+				3CBA26071E499D5400482509 /* TJBinder.h */,
+				3CBA26081E499D5400482509 /* TJBinder.m */,
+				3CBA26091E499D5400482509 /* TJBinderKeyPathParser.h */,
+				3CBA260A1E499D5400482509 /* TJBinderKeyPathParser.m */,
+				3CBA260B1E499D5400482509 /* TJBinderLogger.h */,
+				3CBA260C1E499D5400482509 /* TJDataObject.h */,
+				3CBA260D1E499D5400482509 /* UIView+TJBinder.h */,
+				3CBA260E1E499D5400482509 /* UIView+TJBinder.m */,
+			);
+			name = TJBinder;
+			sourceTree = "<group>";
+		};
 		3CCA99031E448D8800A9BF91 = {
 			isa = PBXGroup;
 			children = (
+				3CBA26061E499D4700482509 /* TJBinder */,
 				3CCA99461E44964300A9BF91 /* Data Binding */,
 				3CCA990E1E448D8800A9BF91 /* IOSDataBinding */,
 				3CCA99281E448D8900A9BF91 /* IOSDataBindingTests */,
@@ -122,6 +148,9 @@
 				3CCA99151E448D8800A9BF91 /* ViewController.h */,
 				3CCA99161E448D8800A9BF91 /* ViewController.m */,
 				3CCA990F1E448D8800A9BF91 /* Supporting Files */,
+				3CBA26171E49A52800482509 /* Fruit.h */,
+				3CBA26181E49A52800482509 /* Fruit.m */,
+				3CBA26191E49A52800482509 /* Fruits.plist */,
 			);
 			path = IOSDataBinding;
 			sourceTree = "<group>";
@@ -160,7 +189,6 @@
 		3CCA99461E44964300A9BF91 /* Data Binding */ = {
 			isa = PBXGroup;
 			children = (
-				3CCA994E1E4498D300A9BF91 /* Categories */,
 				3CCA994A1E44981A00A9BF91 /* DTO */,
 			);
 			name = "Data Binding";
@@ -173,19 +201,8 @@
 				3CCA994C1E44983100A9BF91 /* RegistrationDto.m */,
 				3CCA99521E44994200A9BF91 /* BaseDto.h */,
 				3CCA99531E44994200A9BF91 /* BaseDto.m */,
-				3CCA99551E44A95400A9BF91 /* DataBinding.h */,
-				3CCA99561E44A95400A9BF91 /* DataBinding.m */,
 			);
 			name = DTO;
-			sourceTree = "<group>";
-		};
-		3CCA994E1E4498D300A9BF91 /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				3CCA994F1E4498F800A9BF91 /* UITextField+Binding.h */,
-				3CCA99501E4498F800A9BF91 /* UITextField+Binding.m */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,6 +313,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CCA991F1E448D8900A9BF91 /* LaunchScreen.storyboard in Resources */,
+				3CBA261B1E49A52800482509 /* Fruits.plist in Resources */,
 				3CCA99451E4493DF00A9BF91 /* background_color.jpg in Resources */,
 				3CCA991C1E448D8900A9BF91 /* Assets.xcassets in Resources */,
 				3CCA991A1E448D8800A9BF91 /* Main.storyboard in Resources */,
@@ -323,13 +341,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CBA261A1E49A52800482509 /* Fruit.m in Sources */,
+				3CBA26111E499D5400482509 /* UIView+TJBinder.m in Sources */,
 				3CCA99171E448D8800A9BF91 /* ViewController.m in Sources */,
-				3CCA99571E44A95400A9BF91 /* DataBinding.m in Sources */,
-				3CCA99511E4498F800A9BF91 /* UITextField+Binding.m in Sources */,
+				3CBA26101E499D5400482509 /* TJBinderKeyPathParser.m in Sources */,
 				3CCA994D1E44983100A9BF91 /* RegistrationDto.m in Sources */,
 				3CCA99541E44994200A9BF91 /* BaseDto.m in Sources */,
 				3CCA99141E448D8800A9BF91 /* AppDelegate.m in Sources */,
 				3CCA99111E448D8800A9BF91 /* main.m in Sources */,
+				3CBA260F1E499D5400482509 /* TJBinder.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

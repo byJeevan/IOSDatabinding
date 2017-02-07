@@ -8,33 +8,57 @@
 
 #import "ViewController.h"
 #import "RegistrationDto.h"
-#import "UITextField+Binding.h"
+#import "UIView+TJBinder.h"
 
 @interface ViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextField *firstName;
-@property (weak, nonatomic) IBOutlet UITextField *lastName;
-@property (weak, nonatomic) IBOutlet UITextField *emailField;
-@property (weak, nonatomic) IBOutlet UITextField *mobileField;
-@property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
-@property (nonatomic) RegistrationDto *registrationDto;
+@property (nonatomic, strong) RegistrationDto *registrationDto;
+@property (strong) NSArray * data;
+
 @end
 
 @implementation ViewController
 
 - (IBAction)loginButtonAction:(id)sender {
+    
+    
+    /**********************
+     * View --- to ---> DTO
+     **********************/
+    
+    // self.registrationDto =  self.view.dataObject;
+    
+    
+    
+    NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"firstName"]);
+    
+    
+    NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
+    
+    NSLog(@">> DTO lastName: %@", self.registrationDto.lastName);
 
     
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
+    /***********************
+     * DTO --- to ---> View
+     ***********************/
+    
     self.registrationDto = [RegistrationDto new];
     
-    [self.firstName bind:self.registrationDto];
-      
+    self.registrationDto.firstName = @"jeevan";
+    self.registrationDto.lastName = @"rao";
+    self.registrationDto.email  = @"jeevan.rao@bemore.ch";
+    
+    self.view.dataObject  = self.registrationDto;
+    
+//    NSLog(@"Data object first name: %@", [self.view.dataObject valueForKey:@"firstName"]);
+//    NSLog(@"Data object last name: %@", [self.view.dataObject valueForKey:@"lastName"]);
+//    NSLog(@"Data object email name: %@", [self.view.dataObject valueForKey:@"email"]);
 }
 
 - (void)didReceiveMemoryWarning {
